@@ -1,0 +1,61 @@
+@import '_partials/variables.scss';
+@import '_partials/nympha.scss';
+
+//Pages
+@import '_partials/pages/index.scss';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(24,4,11);
+    background: radial-gradient(circle, $color-dark-red 50%, $color-dark 100%);
+    color: $color-white;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2, h3 {
+    font-family: 'Nympha', sans-serif;
+}
+
+a {
+    color: $color-white;
+    text-decoration: none;
+}
+
+nav {
+    margin-top: 50px;
+    text-transform: uppercase;
+    
+    .container {
+        display: flex;
+
+        div {
+            width: calc(100% / 3);
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .nav__left {
+        justify-content: flex-start;
+    }
+    .nav__center {
+        justify-content: center;
+    }
+    .nav__right {
+        justify-content: flex-end;
+    }
+}
+
+h1 {
+    font-size: 1.4rem;
+}
+
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}

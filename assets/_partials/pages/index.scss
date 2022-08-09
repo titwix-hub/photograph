@@ -1,0 +1,46 @@
+.page__index {
+    overflow: hidden;
+
+    h2 {
+        margin-top: -4rem;
+        font-size: 8rem;
+    }
+
+    .carousel {
+        margin-top: 100px;
+
+        .carousel__inner {
+            width: 100%;
+            height: 100%;
+            transition: .5s ease;
+            display: flex;
+            justify-content: center;
+        }
+
+        .carousel__item {
+            min-width: 950px;
+            text-align: center;
+        }
+    }
+
+    .footer {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .carousel-selector {
+            display: flex;
+            align-items: center;
+
+            p {
+                width: 50px;
+                text-align: center;
+            }
+
+            .arrow {
+                cursor: pointer;
+            }
+        }
+    }
+}

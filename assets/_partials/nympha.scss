@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Nympha';
+    src: local('NymphaTrial Regular'), local('NymphaTrial-Regular'),
+    url('/fonts/NymphaTrial-Regular.woff2') format('woff2'),
+    url('/fonts/NymphaTrial-Regular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nympha';
+    src: local('NymphaTrial Light'), local('NymphaTrial-Light'),
+    url('/fonts/NymphaTrial-Light.woff2') format('woff2'),
+    url('/fonts/NymphaTrial-Light.woff') format('woff');
+    font-weight: bold;
+    font-style: light;
+    font-display: swap;
+}
