@@ -2,8 +2,8 @@
   <div>
     <section class="carousel">
       <div class="carousel__inner" :style="`transform: translateX(${translate}px)`">
-        <div class="carousel__item" v-for="art in arts" :key="art.name">
-          <img :src="art.url" :alt="art.name">
+        <div v-for="(art, index) in arts" :key="art.name" :class="`carousel__item ${index === position - 1 ? 'active' : ''}`">
+          <img @click="goTo(art.name)" :src="art.url" :alt="art.name">
           <h2>{{ art.name }}</h2>
         </div>
       </div>
@@ -22,6 +22,9 @@
 <script>
 export default {
   name: 'IndexPage',
+  transition: {
+    name: 'page'
+  },
   data() {
     return {
       translate: 950,
@@ -33,11 +36,11 @@ export default {
         },
         {
           name: 'Prune',
-          url: '/images/melanie.png'
+          url: '/images/bruxells.png'
         },
         {
           name: 'Ange-Marie',
-          url: '/images/melanie.png'
+          url: '/images/problem.png'
         }
       ]
     }
@@ -65,6 +68,9 @@ export default {
     backward() {
       if (this.translate === 950) return false;
       this.translate = this.translate + 950;
+    },
+    goTo(name) {
+      this.$router.push(`projects/${name}`);
     }
   }
 }

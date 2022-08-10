@@ -3,6 +3,7 @@
 
 //Pages
 @import '_partials/pages/index.scss';
+@import '_partials/pages/project.scss';
 
 * {
     box-sizing: border-box;
@@ -59,3 +60,8 @@ h1 {
     width: 1240px;
     margin: 0 auto;
 }
+
+// Transitions
+
+.page-enter-active, .page-leave-active { transition: opacity .5s; }
+.page-enter, .page-leave-active { opacity: 0; }
