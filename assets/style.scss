@@ -27,6 +27,13 @@ a {
     text-decoration: none;
 }
 
+.t-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+.t-nympha {
+    font-family: 'Nympha', sans-serif;
+}
+
 nav {
     margin-top: 50px;
     text-transform: uppercase;
@@ -65,3 +72,11 @@ h1 {
 
 .page-enter-active, .page-leave-active { transition: opacity .5s; }
 .page-enter, .page-leave-active { opacity: 0; }
+
+.slide-enter-active, .slide-leave-active { 
+    transition: .5s ease; 
+}
+.slide-enter, .slide-leave-active { 
+    opacity: 0; 
+    transform: translateY(20px);
+}
